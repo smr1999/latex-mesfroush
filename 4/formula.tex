@@ -7,10 +7,10 @@
 
 \usepackage{xepersian}
 
-\settextfont[Path=fonts/,BoldFont=IRNazaninBold,ItalicFont=IRNazaninItalic,Extension=.ttf]{IRNazanin}
+\settextfont[Path=fonts/,Extension=.ttf,BoldFont=YasBd,ItalicFont=YasIt,BoldItalicFont=YasBdIt]{Yas}
 
 % If we want our digits in perian
-\setdigitfont[Path=fonts/,BoldFont=IRNazaninBold,ItalicFont=IRNazaninItalic,Extension=.ttf]{IRNazanin}
+\setdigitfont[Path=fonts/,Extension=.ttf,BoldFont=YasBd,ItalicFont=YasIt,BoldItalicFont=YasBdIt]{Yas}
 
 
 \setcounter{secnumdepth}{4}
@@ -142,5 +142,210 @@ D = \int_{0}^{10} \int_{1}^{100} f(x,y)\,\mathrm{d}x\,\mathrm{d}y
 \[
 \int_{0}^{\infty}\frac{\sin{x}}{\sqrt{2x-\ln x+1}}\,\mathrm{d}x
 \]
+
+% We can use limits with \lim
+\[
+\lim f(x),\quad \lim_{x \to 0 } \frac{x-1}{x^{2}-1}
+\]
+
+\[
+\lim_{x \to \frac{\pi}{2}} \int_0^t \frac{x-1}{\cos x+ \tan x}\, \mathrm{d}x
+\]
+
+% use bar
+\[
+\mathbf{\bar{x}} = \frac{x_1+x_2+\dots+x_n}{n}
+\]
+
+%use hat
+\[
+\hat{x} = a+b
+\]
+
+% use wide hat
+\[
+\widehat{xyz} = a+b
+\]
+
+% use tilde
+\[
+\tilde{x} = a-b
+\]
+
+% use wide tilde
+\[
+\widetilde{wxyz} = a^2-b
+\]
+
+% use \overline{text} instead of wide bar
+\[
+\overline{wxyza} = \frac{2}{3},\quad \underline{wxyza}
+\]
+
+% use \dot
+\[
+\dot{u} + 2u = f
+\]
+
+% use \ddot , \dddot and \ddddot
+\[
+\ddot{u} - \Delta u = f, \dddot{u}, \ddddot{u}
+\]
+
+% use $\vec
+\[
+\vec{x} = a^2
+\]
+
+% use \overleftarrow{text} , \overrightarrow{text} and \overleftrightarrow{argument}
+\[
+\overleftarrow{qwert} = a+b ,\; \overrightarrow{trewq} = a-b,\; \overleftrightarrow{qwert} = a \times b
+\]
+
+% use \underleftarrow{argument} and \underrightarrow{argument}
+\[
+ \underleftarrow{qwert} = a+b ,\; \underrightarrow{trewq} = a-b
+\]
+
+% use \overbrace{text} 
+\[
+\bar{x} = \frac{\overbrace{x_1 + x_2 + \cdots + x_n}^{n \ \mathrm{times}}}{n}
+\]
+
+% use \text to use persian
+\[
+\bar{x} = \frac{\overbrace{x_1 + x_2 + \cdots + x_n}^{\text{بار} \ n}}{n}
+\]
+
+% use \underbrace{text}
+\[
+\underbrace{y_1 \cdot y_2 \cdots y_m}_{\text{مرتبه} \ m}
+\]
+
+% use \xrightarrow and \xleftarrow
+\[
+\lim_{x \to 0} f(x) = 0 \xrightarrow{\text{بر اساس قضیه}} B,\quad \lim_{x \to 0} f(x) = 0 \xleftarrow{\text{بر اساس قضیه}} B
+\]
+
+\[
+\lim_{x \to 0} f(x) = 0 \xrightarrow[we\ know\ that\ \cdots]{\text{بر اساس قضیه}} B
+\]
+
+% use sum
+\[
+\sum,\ \sigma,\ \Sigma
+\]
+\[
+\sum_{n = 1}^{n = \infty}  \frac{n_1 + n_2 + \cdots + n_k}{k}
+\]
+
+% use product
+\[
+\Pi,\pi,\prod
+\]
+\[
+\prod_{i=1}^{n} \frac{x-x_i}{x_i+x_j}
+\]
+
+% use sideset
+\[
+\sideset{_{x=1}^{100}}{_{y=1}^{1000}}{\prod} x_{i} \cdot y_{i}
+\]
+
+% use \overset and \joinref and \ast
+\[
+\lim_{x \to 0} f(x) \overset{Hop}{= \joinrel =} 0,\quad \overset{\ast\ast}{X}
+\]
+
+% use \overset
+\[
+\underset{*}{Y}
+\]
+
+\[
+\overset{a}{\underset{b}{X}}
+\]
+
+% use \neq
+\[
+L_i(x) = \prod_{j=0,i \neq j}^{n} \frac{x-x_j}{x_i - x_j}
+\]
+
+% use \substack{argument}
+\[
+L_i(x) = \prod_{\substack{j=0\\i \neq j}}^{n} \frac{x-x_j}{x_i - x_j}
+\]
+
+\[
+\sum_{j=k}^{\substack{100\\ k \neq 10}}anything
+\]
+
+\rule{\textwidth}{1pt}
+
+روش انتگرال گیری جزء به جزء برای 
+% in line formula
+$
+\int u\ \mathrm{d}v
+$
+به شکل روبرو است : 
+$
+\int \sin x + \cos x \ \mathrm{d}x
+$
+
+% use equations with numbers -> helps us to refers to them
+
+\section{مقدمات}
+
+\begin{equation} \label{eq1}
+\int \sin x + \cos x \ \mathrm{d}x
+\end{equation}
+
+\begin{equation} \label{eq2}
+L_i(x) = \prod_{j=0,i \neq j}^{n} \frac{x-x_j}{x_i - x_j}
+\end{equation}
+
+
+\begin{equation} \label{eq3}
+\lim_{x \to 0} f(x) \overset{Hop}{= \joinrel =} 0,\quad \overset{\ast\ast}{X}
+\end{equation}
+
+با توجه به فرمول 
+% use \eqref{label} instead of \ref for refrence to equations
+\eqref{eq1}
+می دانیم :
+\section{انواع فرمول های یکسان}
+\[
+L_i(x) = \prod_{j=0,i \neq j}^{n} \frac{x-x_j}{x_i - x_j}
+\]
+$$
+L_i(x) = \prod_{j=0,i \neq j}^{n} \frac{x-x_j}{x_i - x_j}
+$$
+\begin{equation*}
+	L_i(x) = \prod_{j=0,i \neq j}^{n} \frac{x-x_j}{x_i - x_j}
+\end{equation*}
+
+\section{فرمول نویسی چند خطی}
+% use % to justify left and right content
+\begin{align*}
+a & = b \\
+& =a^2+b\\
+& =\sin x
+\end{align*}
+
+\begin{align*}
+L_i(x) &= \prod_{\substack{j=0\\j \neq i}}^{n} \frac{x-x_j}{x_i-x_j} \\
+& = \frac{(x-x_0)(x-x_1)\cdots (x-x_n)}{(x_i - x_1)\cdots (c_i - x_n)}
+\end{align*}
+
+% To have number equation use align instead of align*
+% use \notag to have not number equation
+\begin{align}
+	L_i(x) &= \prod_{\substack{j=0\\j \neq i}}^{n} \frac{x-x_j}{x_i-x_j} \notag\\
+	& = \frac{(x-x_0)(x-x_1)\cdots (x-x_n)}{(x_i - x_1)\cdots (c_i - x_n)}\label{eq_imp}
+\end{align}
+
+همانطور که در رابطه
+\eqref{eq_imp} 
+دیدیم ...
 
 \end{document}
