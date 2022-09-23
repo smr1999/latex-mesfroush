@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true,linkcolor=blue,linkbordercolor={1 1 1}]{hyperref}
+
+% Use this package for symbols and math equations
+\usepackage{amsmath,amssymb}
+
+\usepackage{xepersian}
+
+\settextfont[Path=fonts/,BoldFont=IRNazaninBold,ItalicFont=IRNazaninItalic,Extension=.ttf]{IRNazanin}
+
+% If we want our digits in perian
+\setdigitfont[Path=fonts/,BoldFont=IRNazaninBold,ItalicFont=IRNazaninItalic,Extension=.ttf]{IRNazanin}
+
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+\title{متن آزمایشی}
+\author{سید محمد روزگار}
+
+\begin{document}
+\maketitle
+
+فرمول نویسی
+
+% Do not use empty newline in \[ equation \]
+% With \quad and \qquad and \ (\space) and \, and \; and \: we can set space in equations
+% Use \! for space in reverse like 
+\[
+a = b + c,\quad d=e-f\\
+e = mc^2 ,\qquad e = mgh
+e = mc^2 ,\; e = mgh
+e = mc^2 ,\qquad e = a\!+ b 
+\]
+
+% For little symbols 
+\[
+\alpha,\beta,\gamma,\omega,\eta,\rho,\phi,\theta,\nu,\kappa,\sigma,\int,\phi,\psi
+\]
+
+% For large symbols
+\[
+\Sigma,\Theta,\Phi,\Psi
+\]
+
+% Use \boldmath for bold ...
+\[
+\Sigma,\boldsymbol{\Sigma}
+\]
+
+% Use var in symbols
+\[
+\phi,\varphi,\epsilon,\varepsilon
+\]
+
+% Power(^) and sub(_) 
+\[
+a = A^{XYZ},\quad b= B_{XYZ},\qquad c = a^{22}+b^{2},\alpha^{\gamma} = \beta^{100} = c^9
+\]
+
+\[
+\sin^2x + \cos^2x=1,\quad \sec^2x+\csc^2x
+\]
+
+\[
+x_1 + x_{11} + x_{1+j}
+\]
+
+% use \mathbf{text} for bold nosymbols
+
+\[
+\mathbf{x} = (x_1+x_2+\cdots+x_{100})
+\]
+
+% Use \sqrt[root]{arg} for radical
+\[
+a = \sqrt[5]{x^2+y^2},\quad b = \sqrt{a+b-c\quad}
+\]
+
+\[
+\mathbf{a} = \sqrt[4]{3+\sqrt{86+\sqrt[3]{x+1}}}
+\]
+
+% Use \frac{num}{den} for fraction
+\[
+a = \frac{x+1}{x^2-3}
+\]
+
+\[
+\frac{\sin^2(\alpha - 1)+x^2}{\sqrt{x^\beta-2\frac{m^2+n_1}{999}}}
+\]
+
+% We can use \tfrac{num}{den} instead of \frac{num}{den} but smaller
+\[
+\tfrac{\sin^2(\alpha - 1)+x^2}{\sqrt{x^\beta-2\tfrac{m^2+n_1}{999}}}
+\]
+
+\[
+\frac12 \frac{x-1}{x+2}
+\]
+
+% Use log_b for log in base b
+\[
+\sqrt{\tfrac{1}{k}\log_bx}
+\]
+
+% use dots with \cdots , \dots , \ldots -> \dots justify dots
+\[
+\mathbf{x} = (x_1+x_2+\cdots+x_{100}),\quad \mathbf{y} = (x_1+x_2+\dots+x_{100}),\quad \mathbf{y} = (x_1+x_2+\ldots+x_{100})
+\]
+
+% use vertical dots with \vdots and diagonal dots with \ddots
+\[
+x \vdots y,\qquad x \ddots y
+\]
+
+% Use dot with \cdot
+\[
+x = A.B,\quad y = A \cdot B
+\]
+
+% Use \int for antegral
+\[
+A = \int (x^2+2x-1)\,\mathrm{d}x
+\]
+
+% Use \int with lower and upper bound
+\[
+B = \int_{-\infty}^{\infty} \sin^2x\,\mathrm{d}x,
+\]
+
+% Multiple antegral
+\[
+C = \iiint a^2+b^2 \, \mathrm{d}x,\quad C = \idotsint a^2+b^2 \, \mathrm{d}x
+\]
+
+\[
+D = \int_{0}^{10} \int_{1}^{100} f(x,y)\,\mathrm{d}x\,\mathrm{d}y
+\]
+
+\[
+\int_{0}^{\infty}\frac{\sin{x}}{\sqrt{2x-\ln x+1}}\,\mathrm{d}x
+\]
+
+\end{document}
