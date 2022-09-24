@@ -511,4 +511,62 @@ A = \lbrace v \colon \text{پیوسته است} \ v \rbrace
 \bar{A} = \mian{x}{10} , \quad \bar{B} = \mian{y}{100}
 \]
 
+\section{جدا کننده ها}
+
+\[
+|x|,\lvert x \rvert,\qquad
+\|v\|\,\lVert v \lVert,\qquad
+\{ x \in \mathbb{R} \colon  x^2 - 2x-3=0 \},\lbrace x \in \mathbb{R}  \colon x^2 -2x-3=0 \rbrace
+\]
+\\
+
+دارای مشکل !
+
+$$\lVert \frac{f+g}{h} \rVert$$
+
+$$\lVert \sum_{n=0}^{n=10} \frac{n}{n^2+1} \rVert_{L_2(\Gamma)} $$
+
+
+% use big commands
+\[
+(\big(\Big(\bigg(\Bigg(
+\]
+
+کمی بهتر
+\[
+\Big\lVert \sum_{n=0}^{n=10} \frac{n}{n^2+1} \Big\rVert_{L_2(\Gamma)} 
+\]
+
+کمی کمی بهتر
+\[
+\bigg\lVert \sum_{n=0}^{n=10} \frac{n}{n^2+1} \bigg\rVert_{L_2(\Gamma)} 
+\]
+
+کمی تغییرات
+\[
+\Bigg\lVert \sum_{n=0}^{n=10} \frac{n}{n^2+1} \Bigg\rVert_{L_2(\Gamma)} 
+\]
+
+% use \left and \right
+بهترین راه حل
+\[
+\left\lVert \sum_{n=0}^{n=10} \frac{n}{n^2+1} \right\rVert_{L_2(\Gamma)} 
+\]
+
+\[
+A = \left\lbrace \frac{f(x)}{g(x)} \colon g(x) \neq 0 \right\rbrace
+\]
+
+دارای مشکل
+\[
+\int_{a}^{b} f(x) \ \mathrm{d} x = \frac{F(x)}{G(x)}|_{a}^{b}
+\]
+
+روش اصلاح
+% use \left. to avoid print left of equation
+\[
+\int_{a}^{b} f(x) \ \mathrm{d}x = \left.\frac{F(x)}{G(x)}\right|_{a}^{b}
+\]
+
+
 \end{document}
